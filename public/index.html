@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Simple News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="page-header"><h1>Simple News</h1></div>
+            <!-- /.page-title -->
+            <div class="simple-news"></div>
+            <!-- /.simple-news -->
+        </div>
+        <!-- /.col-xs-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.simple.news.js"></script>
+<script>
+    var simpleNews = new SimpleNews({
+        path: 'data/data.json',
+        num: 5,
+        target: '.simple-news'
+    });
+
+</script>
+</body>
+</html>
